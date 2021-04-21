@@ -6,10 +6,11 @@ module.exports={
        return res.json({
             Message:"Hi User",
             info:{
-                 '/create':"Enter your credentials and become our user",
-                 '/update/yourId':"Will update your credentials in db",
-                 '/find:yourId':"search someOne",
-                 "/delete:yourId":"delete user"
+                "GET /": "to get info about all routes",
+                'POST /user/register':"to create",
+                'POST /update/:userId':"to update",
+                'POST remove/:userId':"to delete user",
+            
             }
         })
     },
