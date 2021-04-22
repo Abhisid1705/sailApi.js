@@ -11,8 +11,9 @@ const  userController=require('../api/controllers/home');
 module.exports.routes = {
 
     "GET /": userController.welcome,
+    "GET /allUser":userController.getUser,
     'POST /user/register':userController.registerUser,
-    'POST /update/:userId':userController.updateUser,
-    'POST remove/:userId':userController.deleteUser,
+    'PUT /update/:userId':userController.updateUser,
+    'DELETE /remove/:userId':userController.deleteUser,
 
 };
